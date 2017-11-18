@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Mail Client</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Email Client</h1>
+
+    </header>
+
+    <section class="blindClientInterface">
+        <aside>
+            <select role="context menu for picking items" tabindex="1">
+                <option value="Inbox"><a href="interface-blindness.html">Inbox</a></option>
+                <option value="Inbox"><a href="blind-compose.html">Compose</a></option>
+                <option value="mercedes">Tags</option>
+                <option value="Sent">Sent</option>
+                <option value="Trash">Trash</option>
+                <option value="Contacts">Contacts</option>
+                <option value="Attachments">Attachments</option>
+            </select>
+
+        </aside>
+        <section id="blindClientArea">
+            <div id="compose">
+                <form>
+                    Recipient:<br>
+                    <input type="text" name="recipient" value="Recipient email">
+                    Sender:<br>
+                    <input type="text" name="sender" value="Senders email">
+                    <br>
+                    <textarea name="Email body" cols="40" rows="5" ></textarea>
+                    <br>
+                    <div class="email-compose-btns">
+                        <input type="submit" value="Send email">
+                        <input type="submit" value="Save to draft">
+                        <input type="submit" value="Discard">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        Copywrong 2017 - all rights reversed.
+    </footer>
+</div>
+</body>
+</html>

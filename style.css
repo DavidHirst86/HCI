@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+html {
+    font-size: 100%;
+}
+
+/*defining a base size allows it to resize to the zoom level*/
+p, span, a {
+    font-size: 1em;
+}
+
+h1 {
+    font-size:1.5em;
+}
+h2 {
+    font-size:1.2em;
+}
+
+h3 {
+    font-size:1.1em;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+    position: relative;
+}
+
+header {
+    background: orange;
+}
+
+section {
+    flex: 2;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnpath {
+    height: 5em;
+    margin: 2em;
+    background: #d82828;
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a.btnpath:hover {
+    border: 1em dashed #FFEB3B;
+}
+
+footer {
+    background: oldlace;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*vision impared interface*/
+.customisationOptions {
+    display: flex;
+    margin: 1em 0;
+    align-items: center;
+}
+
+.customisationOptions span {
+    margin: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.customisationOptions input[type="radio"] {
+    height: 3em;
+    width: 3em;
+}
+
+nav {
+    background: grey;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+        nav ul li {
+            width: 5em;
+            margin: 1em;
+            list-style-type: none;
+            background: chartreuse;
+            height: 5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column;
+        }
+
+        nav ul li .fa {
+            font-size: 2em;
+        }
+        nav ul li:hover {
+            outline: 5px dashed yellow;
+        }
+
+
+
+.emailboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: gray;
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 5px 5px;
+}
+
+.emailbox {
+    width: 20em;
+    height: 22em;
+    background: #fff;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+    .EBHeader {
+        display: flex;
+        height: 6em;
+        border-bottom: .1em solid;
+    }
+        .emailbox img {
+            width: 5em;
+            border-radius: 100%;
+            height: 5em;
+            margin: .5em 0 0 .5em;
+        }
+
+    .EBContent {
+        display: flex;
+        flex: 1;
+        padding:1em;
+        flex-direction:column;
+    }
+
+
+    .ebFooter {
+        display: flex;
+        border-top: .1em solid;
+        padding: 1em;
+    }
+
+    .ebFooter button {
+        margin: 0 1em;
+        padding: 1em;
+    }
+
+    .ebFooter button:hover {
+        outline: 3px dashed blue;
+    }
+
+    .emailbox:hover {
+        outline: 5px dashed yellow;
+    }
+
+
+    #composeVisual {
+        background-color: gray;
+        background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 15px);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #composeVisual h2 {
+        background: white;
+        margin: .3em 0;
+    }
+
+    #composeVisual form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #composeVisual button {
+        width: 10em;
+        height: 5em;
+    }
+
+    #composeVisual button:hover {
+        outline: 3px dashed blue;
+    }
+
+    #composeVisual input, #composeVisual textarea {
+        width: 100%;
+        height:3em;
+    }
+
+    #composeVisual textarea {
+        width: 100%;
+        height:25em;
+    }
+
+    .email-compose-btns .fa {
+        font-size: 2em;
+        margin-right: .3em;
+    }
+
+
+.DeleteEmail {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    font-size: 2em;
+    height: 3em;
+}
+
+/* viewing email visual */
+.email-view {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100%;
+    padding: 1em;
+}
+
+.email-view img {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+
+.email-view .ebFooter button {
+    font-size: 1.2em;
+}
+
+
+
+
+/*Blind specific*/
+.blindClientInterface {
+    flex-direction:row;
+    align-items:flex-start;
+}
+
+.blindClientInterface aside {
+    height: 100%;
+    width: 15%;
+}
+
+.blindClientInterface aside ul {
+    margin: 2em 1em;
+    list-style-type: none;
+}
+
+.blindClientInterface aside ul li {
+    margin: 1em 0;
+}
+
+
+
+#inbox {
+    background: darkseagreen;
+    width: 100%;
+}
+
+#inbox ul {
+    list-style-type: none;
+}
+
+#inbox li {
+    border: 1px solid;
+    padding: 1em;
+}
+
+#compose {
+    background: pink;
+    width: 100%;
+}
+
+#compose form {
+    flex-direction: column;
+    display: flex;
+}
+
+#compose form input[type="textarea"] {
+    height:10em;
+}
+
+/*highlights focus area*/
+*:focus  {
+    background: yellow; }
+

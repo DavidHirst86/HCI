@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Mail Client</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Email Client</h1>
+    </header>
+    <nav>
+
+        <ul>
+            <a href="interface-vision-impairment.html">
+                <li tabindex="1">
+                <i class="fa fa-inbox" aria-hidden="true"></i>
+                Inbox
+                </li>
+            </a>
+            <a href="#">
+                <li tabindex="2">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Compose
+                </li>
+            </a>
+            <li tabindex="3">
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                Sent
+            </li>
+            <li tabindex="4">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+                Tags
+            </li>
+            <li tabindex="5">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                Draft
+            </li>
+            <li tabindex="6">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                Trash
+            </li>
+            <li tabindex="7">
+                <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                Contacts
+            </li>
+        </ul>
+
+    </nav>
+    <section class="emailboxes">
+
+        <div id="composeVisual">
+            <form>
+                <h2>Recipient:</h2>
+                <input type="text" name="recipient" value="Recipient email">
+                <h2>Sender:</h2>
+                <input type="text" name="sender" value="Senders email">
+                <br>
+                <textarea name="Email body" cols="40" rows="5" ></textarea>
+                <br>
+                <div class="email-compose-btns">
+                    <button type="submit" value="Send email"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</button>
+                    <button type="submit" value="Save to draft"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save to draft</button>
+                    <button type="submit" value="Discard"><i class="fa fa-trash-o" aria-hidden="true"></i>Discard</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        Copywrong 2017 - all rights reversed.
+    </footer>
+</div>
+</body>
+</html>
