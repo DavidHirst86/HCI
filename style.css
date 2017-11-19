@@ -32,12 +32,13 @@ h3 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background: lightblue;
+    background: #ebeff1;
     position: relative;
 }
 
 header {
-    background: orange;
+    background: #607D8B;
+    color: #fff;
 }
 
 section {
@@ -52,7 +53,7 @@ section {
 .btnpath {
     height: 5em;
     margin: 2em;
-    background: #d82828;
+    background: #fff;
     width: 50%;
     text-align: center;
     font-size: 2em;
@@ -62,11 +63,12 @@ section {
     text-decoration: none;
 }
 a.btnpath:hover {
-    border: 1em dashed #FFEB3B;
+    border: .2em dashed green;
 }
 
 footer {
-    background: oldlace;
+    background: #607d8b;
+    color: #fff;
     height: 5em;
     display: flex;
     align-items: center;
@@ -93,7 +95,7 @@ footer {
 }
 
 nav {
-    background: grey;
+    background: #607d8b;
     display: flex;
     justify-content: center;
 }
@@ -106,7 +108,7 @@ nav {
             width: 5em;
             margin: 1em;
             list-style-type: none;
-            background: chartreuse;
+            background: #f2e9e9;
             height: 5em;
             display: flex;
             align-items: center;
@@ -114,11 +116,18 @@ nav {
             flex-direction:column;
         }
 
+        nav ul a {
+            text-decoration: none;
+            color: #000;
+        }
+
         nav ul li .fa {
             font-size: 2em;
         }
         nav ul li:hover {
-            outline: 5px dashed yellow;
+            outline: 5px dashed limegreen;
+            background: #fff;
+            color: limegreen;
         }
 
 
@@ -127,7 +136,6 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: gray;
     background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
     background-size: 5px 5px;
 }
@@ -172,17 +180,16 @@ nav {
     }
 
     .ebFooter button:hover {
-        outline: 3px dashed blue;
+        outline: 3px dashed limegreen;
     }
 
     .emailbox:hover {
-        outline: 5px dashed yellow;
+        outline: 5px dashed limegreen;
     }
 
 
     #composeVisual {
-        background-color: gray;
-        background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 15px);
+        background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
         display: flex;
         justify-content: center;
         width: 100%;
@@ -205,7 +212,7 @@ nav {
     }
 
     #composeVisual button:hover {
-        outline: 3px dashed blue;
+        outline: 3px dashed limegreen;
     }
 
     #composeVisual input, #composeVisual textarea {
@@ -282,8 +289,9 @@ nav {
 
 
 #inbox {
-    background: darkseagreen;
+    background: #fff;
     width: 100%;
+    font-size: 1.3em;
 }
 
 #inbox ul {

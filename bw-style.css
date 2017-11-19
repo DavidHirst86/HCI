@@ -4,6 +4,11 @@ a {
 
 header {
     background: #fff;
+    color: #000;
+}
+
+nav {
+    background: #909090;
 }
 
 nav ul li {
@@ -23,15 +28,30 @@ nav ul li {
 
 nav ul li:hover {
     outline: 5px dashed black;
+    background: #fff;
+    color: black;
+}
+
+nav ul li:focus {
+    color: white;
 }
 
 *:focus {
     background: #000;
-    color:#fff;
 }
 
-.EBContent:focus {
+.ebFooter button:hover {
+    outline: 3px dashed black;
+}
+.ebFooter button:focus {
+    outline: 3px dashed #fff;
+}
+
+.ebFooter button:focus {
+    outline: 3px dashed black;
     color: #fff;
 }
+
+
 
 
