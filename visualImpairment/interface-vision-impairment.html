@@ -18,7 +18,7 @@
     <nav>
 
         <ul>
-            <a href="#">
+            <a id="isinbox" href="#">
                 <li tabindex="1">
                 <i class="fa fa-inbox" aria-hidden="true"></i>
                 Inbox
@@ -55,7 +55,7 @@
     </nav>
     <section class="emailboxes">
 
-        <a href="viewEmail-interface-vision-impairment%20.html"><div class="emailbox">
+        <a id="draggable" class="ui-widget-content" viewEmail-interface-vision-impairment%20.html"><div class="emailbox">
                 <div class="EBHeader">
                     <img src="../imgs/angryBamboon.jpg" alt="Contacts profile picture">
                     <div>
@@ -174,17 +174,46 @@
         </div>
         </a>
 
-
+        <div class="droppable ui-widget-header DeleteEmail">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+            Discard
+        </div>
     </section>
 
     <!-- Absolutly positioned elements -->
-    <div class="DeleteEmail">
+    <!--<div class="droppable ui-widget-header DeleteEmail">
         <i class="fa fa-trash-o" aria-hidden="true"></i> Discard
-    </div>
+    </div>-->
 
     <footer>
         Copywrong 2017 - all rights reversed.
     </footer>
 </div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#draggable" ).draggable( {
+            drop: function( event, ui ) {
+                $(this)
+                    .addClass("emailDropped")
+            }
+        });
+
+
+        $( "#droppable" ).droppable({
+            drop: function( event, ui ) {
+                $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "p" )
+                    .html( "Dropped!" );
+
+            }
+        });
+    } );
+</script>
+
+
 </body>
 </html>

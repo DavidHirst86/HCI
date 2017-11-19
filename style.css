@@ -321,3 +321,6 @@ nav {
 *:focus  {
     background: yellow; }
 
+.emailDropped {
+    display: none;
+}
