@@ -234,13 +234,31 @@ nav {
 .DeleteEmail {
     position: absolute;
     bottom: 0;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: red;
     font-size: 2em;
-    height: 3em;
+    height: 5em;
+    width: 5em;
+    right: 0;
+    border-radius: 5em 0 0;
+    flex-direction: column;
+}
+
+.KeepEmail {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4CAF50;
+    font-size: 2em;
+    height: 5em;
+    width: 5em;
+    border-radius: 0 5em 0 0;
+    flex-direction: column;
 }
 
 /* viewing email visual */
