@@ -56,5 +56,19 @@
         Copywrong 2017 - all rights reversed.
     </footer>
 </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        fnDetectChange();
+        $('.menu').on('change', function() {
+            window.location.href=this.value;
+    });
+
+        function fnDetectChange(){
+            var currentUrl=window.location.href;
+            currentUrl=currentUrl.split("/");
+            currentUrl=currentUrl[currentUrl.length-1];
+            $(".menu").val(currentUrl);
+        }
+    </script>
 </body>
 </html>
