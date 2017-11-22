@@ -17,14 +17,14 @@
 
     <section class="blindClientInterface">
         <aside>
-            <select role="context menu for picking items" tabindex="1">
+            <select class="menu" role="context menu for picking items" tabindex="1">
                 <option value="interface-blindness.html">Inbox</option>
                 <option value="blind-compose.html">Compose</option>
-                <option value="mercedes">Tags</option>
-                <option value="Sent">Sent</option>
-                <option value="Trash">Trash</option>
-                <option value="Contacts">Contacts</option>
-                <option value="Attachments">Attachments</option>
+                <option value="mercedes.html">Tags</option>
+                <option value="Sent.html">Sent</option>
+                <option value="Trash.html">Trash</option>
+                <option value="Contacts.html">Contacts</option>
+                <option value="Attachments.html">Attachments</option>
             </select>
 
         </aside>
@@ -48,5 +48,24 @@
         Copywrong 2017 - all rights reversed.
     </footer>
 </div>
+
+     <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        fnDetectChange();
+        $('.menu').on('change', function() {
+            window.location.href=this.value;
+    });
+
+        function fnDetectChange(){
+            var currentUrl=window.location.href;
+            currentUrl=currentUrl.split("/");
+            currentUrl=currentUrl[currentUrl.length-1];
+            $(".menu").val(currentUrl);
+
+                        
+            //$('.menu').val= 
+        }
+    </script>
 </body>
 </html>
